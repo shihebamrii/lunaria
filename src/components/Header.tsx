@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
     import { Link, useLocation } from 'react-router-dom';
     import { motion } from 'framer-motion';
-    import { Cloud, Sun, Moon } from 'lucide-react';
+    import { Cloud } from 'lucide-react';
     import WeatherWidget from './WeatherWidget';
 
     const Header: React.FC = () => {

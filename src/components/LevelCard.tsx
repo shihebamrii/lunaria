@@ -10,7 +10,7 @@ import React from 'react';
       path: string;
     }
 
-    const LevelCard: React.FC<LevelCardProps> = ({ level, title, description, icon, path }) => {
+    const LevelCard: React.FC<LevelCardProps> = ({ title, description, icon, path }) => {
       return (
         <motion.div
           whileHover={{ scale: 1.05, y: -10, rotateY: 5 }}
