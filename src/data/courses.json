@@ -1,0 +1,155 @@
+{
+      "primaire": {
+        "title": "École Primaire",
+        "subjects": {
+          "mathematiques": {
+            "title": "Mathématiques",
+            "icon": "🔢",
+            "lessons": [
+              {
+                "id": 1,
+                "title": "Les nombres de 0 à 100",
+                "description": "Apprendre à compter et reconnaître les nombres",
+                "type": "pdf",
+                "url": "#"
+              },
+              {
+                "id": 2,
+                "title": "L'addition simple",
+                "description": "Découvrir l'addition avec des exemples amusants",
+                "type": "video",
+                "url": "#"
+              }
+            ]
+          },
+          "francais": {
+            "title": "Français",
+            "icon": "📚",
+            "lessons": [
+              {
+                "id": 1,
+                "title": "L'alphabet et les voyelles",
+                "description": "Apprendre les lettres de l'alphabet",
+                "type": "pdf",
+                "url": "#"
+              },
+              {
+                "id": 2,
+                "title": "Mes premiers mots",
+                "description": "Vocabulaire de base pour débuter",
+                "type": "video",
+                "url": "#"
+              }
+            ]
+          },
+          "sciences": {
+            "title": "Sciences",
+            "icon": "🔬",
+            "lessons": [
+              {
+                "id": 1,
+                "title": "Les animaux de la nuit",
+                "description": "Découvrir les animaux nocturnes",
+                "type": "pdf",
+                "url": "#"
+              }
+            ]
+          }
+        }
+      },
+      "college": {
+        "title": "Collège",
+        "subjects": {
+          "mathematiques": {
+            "title": "Mathématiques",
+            "icon": "📐",
+            "lessons": [
+              {
+                "id": 1,
+                "title": "Les fractions",
+                "description": "Comprendre et utiliser les fractions",
+                "type": "pdf",
+                "url": "#"
+              },
+              {
+                "id": 2,
+                "title": "La géométrie de base",
+                "description": "Formes et calculs géométriques",
+                "type": "video",
+                "url": "#"
+              }
+            ]
+          },
+          "francais": {
+            "title": "Français",
+            "icon": "✍️",
+            "lessons": [
+              {
+                "id": 1,
+                "title": "La grammaire française",
+                "description": "Les règles de base de la grammaire",
+                "type": "pdf",
+                "url": "#"
+              }
+            ]
+          },
+          "sciences": {
+            "title": "Sciences",
+            "icon": "🧪",
+            "lessons": [
+              {
+                "id": 1,
+                "title": "La photosynthèse",
+                "description": "Comment les plantes produisent leur énergie",
+                "type": "video",
+                "url": "#"
+              }
+            ]
+          }
+        }
+      },
+      "lycee": {
+        "title": "Lycée",
+        "subjects": {
+          "mathematiques": {
+            "title": "Mathématiques",
+            "icon": "∑",
+            "lessons": [
+              {
+                "id": 1,
+                "title": "Les fonctions",
+                "description": "Introduction aux fonctions mathématiques",
+                "type": "pdf",
+                "url": "#"
+              }
+            ]
+          },
+          "francais": {
+            "title": "Français",
+            "icon": "📖",
+            "lessons": [
+              {
+                "id": 1,
+                "title": "La littérature française",
+                "description": "Les grands auteurs et leurs œuvres",
+                "type": "pdf",
+                "url": "#"
+              }
+            ]
+          },
+          "sciences": {
+            "title": "Sciences",
+            "icon": "⚗️",
+            "lessons": [
+              {
+                "id": 1,
+                "title": "La chimie organique",
+                "description": "Les bases de la chimie du carbone",
+                "type": "video",
+                "url": "#"
+              }
+            ]
+          }
+        }
+      }
+    }
