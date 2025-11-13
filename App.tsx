@@ -10,7 +10,7 @@ import React from 'react';
     import Course from './src/pages/Course';
     import About from './src/pages/About';
     import Contact from './src/pages/Contact';
-    import Hope from './src/pages/hope';
+    import Hope from './src/pages/Hope';
     import NotFound from './src/pages/NotFound';
 
     const App: React.FC = () => {
