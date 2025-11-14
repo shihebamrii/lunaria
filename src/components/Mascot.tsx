@@ -152,7 +152,7 @@ const Mascot: React.FC = () => {
           y: { duration: 0.8 }
         }}
       >
-        🦊
+        <img src="/luma.png" alt="Mascot Luma" className="w-10 h-10 object-contain" />
       </motion.button>
     </div>
   );

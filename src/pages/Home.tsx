@@ -147,21 +147,24 @@ const Home: React.FC = () => {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-md border border-blue-400/30 rounded-2xl p-6 max-w-2xl mx-auto shadow-2xl shadow-blue-400/20"
             >
-              <div className="flex items-start space-x-4">
-                <motion.div 
-                  animate={{ y: [0, -5, 0], rotate: [0, 5, -5, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                  className="text-3xl"
-                >
-                  🦊
-                </motion.div>
-                <div className="text-left">
-                  <p className="text-blue-200 text-lg leading-relaxed">
-                    ✨ Salut, je suis Luma, ton guide de la Lune du Savoir ! 
-                    Choisis ton niveau pour commencer à apprendre sous la lumière des étoiles. Prêt pour le décollage ?
-                  </p>
-                </div>
-              </div>
+<div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4">
+  <motion.div 
+    animate={{ y: [0, -5, 0], rotate: [0, 5, -5, 0] }}
+    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+    className="text-3xl flex-shrink-0"
+  >
+    <img 
+      src="/luma-hey.png" 
+      alt="Mascot Luma" 
+      className="w-24 h-auto md:w-36 md:h-auto object-contain" 
+    />
+  </motion.div>
+  <div className="text-center md:text-left">
+    <p className="text-blue-200 text-base md:text-lg leading-relaxed">
+      Salut, petit explorateur ! Je suis Luma, ta guide lunaire. 🌕✨ Ensemble, nous allons découvrir des mondes incroyables et apprendre plein de choses passionnantes. Prêt pour l'aventure ?
+    </p>
+  </div>
+</div>
             </motion.div>
 
             {/* Call to Action Button with Scroll Functionality */}

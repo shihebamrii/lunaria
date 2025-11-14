@@ -302,7 +302,7 @@ const About: React.FC = () => {
                   animate={{ y: [0, -5, 0], rotate: [0, 5, -5, 0] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 >
-                  🦊
+                  <img src="/luma.png" alt="Mascot Luma" className="w-10 h-10 object-contain" />
                 </motion.div>
                 <h2 className="text-2xl font-bold text-blue-200">
                   Rencontre Luma
