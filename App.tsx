@@ -12,6 +12,9 @@ import React from 'react';
     import Contact from './src/pages/Contact';
     import Hope from './src/pages/Hope';
     import NotFound from './src/pages/NotFound';
+    import ClassroomIndex from './src/pages/classroom/index';
+    import ClassroomHost from './src/pages/classroom/host';
+    import ClassroomStudent from './src/pages/classroom/student';
 
     const App: React.FC = () => {
       return (
@@ -25,6 +28,9 @@ import React from 'react';
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/hope" element={<Hope />} />
+                <Route path="/classroom" element={<ClassroomIndex />} />
+                <Route path="/classroom/host" element={<ClassroomHost />} />
+                <Route path="/classroom/student" element={<ClassroomStudent />} />
 
                 <Route path="*" element={<NotFound />} />
               </Routes>
