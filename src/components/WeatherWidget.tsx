@@ -73,7 +73,7 @@ const WeatherWidget: React.FC<{ onClose: () => void }> = ({ onClose }) => {
           }
         });
       } catch (err) {
-        setError('Impossible de charger la météo. Veuillez réessayer plus tard.');
+        setError('تعذر تحميل الطقس. يرجى المحاولة مرة أخرى لاحقاً.');
       } finally {
         setLoading(false);
       }
@@ -123,7 +123,7 @@ const WeatherWidget: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 
     if (start !== null) {
       const startTime = formatTime(hourly.time[start]);
-      periods.push(`${startTime} - 00:00 (demain)`);
+          periods.push(`${startTime} - 00:00 (غداً)`);
     }
 
     return periods;
@@ -136,7 +136,7 @@ const WeatherWidget: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         animate={{ opacity: 1 }}
         className="bg-slate-800/60 backdrop-blur-sm border border-blue-400/20 rounded-xl p-4 text-center"
       >
-        <div className="animate-pulse text-blue-300">Chargement de la météo...</div>
+        <div className="animate-pulse text-blue-300">جاري تحميل الطقس...</div>
       </motion.div>
     );
   }
@@ -165,7 +165,7 @@ const WeatherWidget: React.FC<{ onClose: () => void }> = ({ onClose }) => {
       className="bg-slate-800/60 backdrop-blur-sm border border-blue-400/20 rounded-xl p-6 shadow-lg shadow-blue-400/10"
     >
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold text-blue-200">Météo à Tunis</h3>
+        <h3 className="text-lg font-semibold text-blue-200">الطقس في تونس</h3>
         <button
           onClick={onClose}
           className="text-blue-300 hover:text-blue-200 transition-colors"
@@ -184,19 +184,19 @@ const WeatherWidget: React.FC<{ onClose: () => void }> = ({ onClose }) => {
       
       <div className="space-y-2 text-sm mb-4">
         <div className="flex justify-between">
-          <span className="text-blue-300">Lever du soleil:</span>
+          <span className="text-blue-300">شروق الشمس:</span>
           <span className="text-blue-200">{weather.sunrise}</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-blue-300">Coucher du soleil:</span>
+          <span className="text-blue-300">غروب الشمس:</span>
           <span className="text-blue-200">{weather.sunset}</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-blue-300">Indice UV actuel:</span>
+          <span className="text-blue-300">مؤشر الأشعة فوق البنفسجية الحالي:</span>
           <span className="text-blue-200">{weather.uvIndex}</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-blue-300">Indice UV max aujourd'hui:</span>
+          <span className="text-blue-300">أقصى مؤشر للأشعة فوق البنفسجية اليوم:</span>
           <span className="text-blue-200">{weather.uvIndexMax}</span>
         </div>
       </div>
@@ -212,12 +212,12 @@ const WeatherWidget: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         }`}
       >
         {isSafeToGoOut(weather.uvIndex)
-          ? '🌙 Il est sûr de sortir maintenant ! Profite de ce moment à faible UV.'
-          : '☀️ Attention ! L\'indice UV est élevé. Évite de sortir pour le moment.'}
+          ? '🌙 من الآمن الخروج الآن! استمتع بهذه اللحظة ذات الأشعة فوق البنفسجية المنخفضة.'
+          : '☀️ انتبه! مؤشر الأشعة فوق البنفسجية مرتفع. تجنب الخروج في الوقت الحالي.'}
       </motion.div>
 
       <div className="mt-6">
-        <h4 className="text-md font-semibold text-blue-200 mb-2">Périodes sécurisées aujourd'hui (UV &lt; 3):</h4>
+        <h4 className="text-md font-semibold text-blue-200 mb-2">الفترات الآمنة اليوم (الأشعة فوق البنفسجية &lt; 3):</h4>
         {safePeriods.length > 0 ? (
           <ul className="space-y-1 text-sm text-blue-200">
             {safePeriods.map((period, index) => (
@@ -227,9 +227,9 @@ const WeatherWidget: React.FC<{ onClose: () => void }> = ({ onClose }) => {
             ))}
           </ul>
         ) : (
-          <p className="text-sm text-blue-300">Aucune période sécurisée pendant la journée aujourd'hui. Privilégie la nuit après le coucher du soleil.</p>
+          <p className="text-sm text-blue-300">لا توجد فترة آمنة خلال النهار اليوم. يُفضل الليل بعد غروب الشمس.</p>
         )}
-        <p className="text-xs text-blue-400 mt-2">Note: Les périodes nocturnes (avant lever et après coucher du soleil) sont généralement sécurisées car UV = 0. Porte toujours une protection si nécessaire.</p>
+        <p className="text-xs text-blue-400 mt-2">ملاحظة: الفترات الليلية (قبل الشروق وبعد الغروب) آمنة عادة لأن الأشعة فوق البنفسجية = 0. ارتدِ دائماً الحماية عند الحاجة.</p>
       </div>
     </motion.div>
   );

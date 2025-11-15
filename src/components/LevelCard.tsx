@@ -40,7 +40,7 @@ import React from 'react';
                   whileHover={{ scale: 1.05 }}
                   className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-400/20 to-purple-400/20 text-blue-200 rounded-full text-sm font-medium group-hover:from-blue-400/30 group-hover:to-purple-400/30 transition-all duration-300 border border-blue-400/30 shadow-md shadow-blue-400/10"
                 >
-                  Commencer {icon}
+                  ابدأ {icon}
                 </motion.span>
               </div>
             </div>

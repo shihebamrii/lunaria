@@ -21,7 +21,7 @@ const ClassroomHost: React.FC = () => {
         <div className="container mx-auto flex items-center justify-center space-x-2">
           <span className="text-2xl">👨‍🏫</span>
           <p className="text-yellow-200 font-semibold text-sm md:text-base">
-            Vous êtes en mode Enseignant (Hôte)
+            أنت في وضع المعلم (المضيف)
           </p>
         </div>
       </motion.div>

@@ -12,14 +12,14 @@ import React from 'react';
       const { level, subject } = useParams<{ level: string; subject: string }>();
       
       if (!level || !subject || !coursesData[level as keyof typeof coursesData]) {
-        return <div>Cours non trouvé</div>;
+        return <div>الدورة غير موجودة</div>;
       }
 
       const levelData = coursesData[level as keyof typeof coursesData];
       const subjectData = levelData.subjects[subject as keyof typeof levelData.subjects];
 
       if (!subjectData) {
-        return <div>Matière non trouvée</div>;
+        return <div>المادة غير موجودة</div>;
       }
 
       return (
@@ -34,7 +34,7 @@ import React from 'react';
                 className="inline-flex items-center space-x-2 text-blue-300 hover:text-blue-200 transition-colors mb-6"
               >
                 <span>←</span>
-                <span>Retour aux matières</span>
+                <span>العودة إلى المواد</span>
               </Link>
               
               <motion.div
@@ -55,7 +55,7 @@ import React from 'react';
             <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
               {/* Lessons List */}
               <div className="lg:col-span-2 space-y-6">
-                <h2 className="text-2xl font-bold text-blue-200 mb-6">Leçons disponibles</h2>
+                <h2 className="text-2xl font-bold text-blue-200 mb-6">الدروس المتاحة</h2>
                 
                 {subjectData.lessons.map((lesson, index) => (
                   <motion.div
@@ -90,12 +90,12 @@ import React from 'react';
                           {lesson.type === 'pdf' ? (
                             <button className="inline-flex items-center space-x-2 px-4 py-2 bg-red-400/20 text-red-200 rounded-lg hover:bg-red-400/30 transition-colors">
                               <FileText className="w-4 h-4" />
-                              <span>Lire le PDF</span>
+                              <span>قراءة ملف PDF</span>
                             </button>
                           ) : (
                             <button className="inline-flex items-center space-x-2 px-4 py-2 bg-green-400/20 text-green-200 rounded-lg hover:bg-green-400/30 transition-colors">
                               <Play className="w-4 h-4" />
-                              <span>Regarder la vidéo</span>
+                              <span>مشاهدة الفيديو</span>
                             </button>
                           )}
                         </div>
@@ -116,18 +116,18 @@ import React from 'react';
                   <div className="text-center space-y-4">
                     <div className="text-4xl">🦊</div>
                     <h3 className="text-lg font-semibold text-blue-200">
-                      Messages de Luma
+                      رسائل لومة
                     </h3>
                     
                     <div className="space-y-4 text-sm">
                       <div className="bg-blue-400/10 rounded-lg p-3 text-blue-200">
-                        🌟 Bravo ! Tu avances bien dans ton parcours de lumière.
+                        🌟 أحسنت! أنت تتقدم بشكل جيد في رحلتك نحو النور.
                       </div>
                       <div className="bg-purple-400/10 rounded-lg p-3 text-purple-200">
-                        💫 Tu veux une petite pause ? Respire et regarde la lune.
+                        💫 هل تريد استراحة صغيرة؟ تنفس وانظر إلى القمر.
                       </div>
                       <div className="bg-indigo-400/10 rounded-lg p-3 text-indigo-200">
-                        ✨ Chaque leçon terminée te rapproche des étoiles !
+                        ✨ كل درس تنهيه يقربك من النجوم!
                       </div>
                     </div>
                   </div>

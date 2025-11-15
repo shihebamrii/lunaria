@@ -111,16 +111,16 @@ const NotFound: React.FC = () => {
         </div>
 
         <h1 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
-          OPPS! Page Not Found
+          عذراً! الصفحة غير موجودة
         </h1>
         <p className="mb-8 text-base text-white/60 sm:text-lg">
-          We can&apos;t seem to find the page you are looking for!
+          لا يمكننا العثور على الصفحة التي تبحث عنها!
         </p>
         <a
           href={typeof window !== 'undefined' ? window.location.origin : '/'}
           className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
         >
-          Back to homepage
+          العودة إلى الصفحة الرئيسية
         </a>
 
         {/* Footer */}

@@ -54,7 +54,7 @@ const ClassroomIndex: React.FC = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-blue-200 via-purple-200 to-indigo-200 bg-clip-text text-transparent drop-shadow-lg"
             >
-              Rejoindre la Classe Lunaire
+              انضم إلى الفصل القمري
             </motion.h1>
 
             {/* Subtitle */}
@@ -64,7 +64,7 @@ const ClassroomIndex: React.FC = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="text-lg md:text-xl text-blue-200 text-center mb-8 leading-relaxed"
             >
-              Choisissez votre rôle pour entrer dans la salle de classe.
+              اختر دورك للدخول إلى الفصل الدراسي.
             </motion.p>
 
             {/* Buttons Container */}
@@ -81,7 +81,7 @@ const ClassroomIndex: React.FC = () => {
               >
                 <div className="relative z-10 flex flex-col items-center space-y-2">
                   <span className="text-4xl">👨‍🏫</span>
-                  <span>Je suis Enseignant (Hôte)</span>
+                  <span>أنا معلم (مضيف)</span>
                 </div>
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-yellow-400/10 to-amber-400/10"
@@ -103,7 +103,7 @@ const ClassroomIndex: React.FC = () => {
               >
                 <div className="relative z-10 flex flex-col items-center space-y-2">
                   <span className="text-4xl">🎓</span>
-                  <span>Je suis Élève (Participant)</span>
+                  <span>أنا طالب (مشارك)</span>
                 </div>
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-indigo-400/10"

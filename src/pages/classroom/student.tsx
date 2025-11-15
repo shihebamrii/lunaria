@@ -21,7 +21,7 @@ const ClassroomStudent: React.FC = () => {
         <div className="container mx-auto flex items-center justify-center space-x-2">
           <span className="text-2xl">🎓</span>
           <p className="text-blue-200 font-semibold text-sm md:text-base">
-            Vous êtes en mode Élève (Accès invité)
+            أنت في وضع الطالب (وصول ضيف)
           </p>
         </div>
       </motion.div>

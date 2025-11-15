@@ -8,50 +8,50 @@ import StarField from '../components/StarField';
 const stories = [
   {
     name: 'Alice Tyson',
-    age: '11 ans',
-    story: 'Alice a été diagnostiquée avec XP à l\'âge de 3 ans. Malgré sa sensibilité au soleil, elle transitionne vers l\'adolescence avec courage, en apprenant à gérer sa condition tout en poursuivant ses rêves. Son histoire montre que avec le soutien approprié, les enfants avec XP peuvent grandir et s\'épanouir.',
+    age: '11 عاماً',
+    story: 'تم تشخيص أليس بمرض XP في سن الثالثة. رغم حساسيتها للشمس، تنتقل إلى مرحلة المراهقة بشجاعة، وتتعلم إدارة حالتها بينما تسعى لتحقيق أحلامها. قصتها تظهر أنه مع الدعم المناسب، يمكن لأطفال XP أن يكبروا وينموا.',
     source: 'Global Genes',
     icon: '🌟'
   },
   {
     name: 'Oliver Kei',
-    age: '7 ans',
-    story: 'Oliver vit avec XP, une condition qui rend le soleil potentiellement mortel pour lui. Pourtant, il profite de la vie nocturne, explore le monde sous les étoiles et inspire les autres avec sa joie de vivre. Son risque accru de cancer ne l\'empêche pas de rêver grand.',
+    age: '7 أعوام',
+    story: 'يعيش أوليفر مع XP، حالة تجعل الشمس قاتلة محتملة له. ومع ذلك، يستمتع بالحياة الليلية، ويستكشف العالم تحت النجوم ويلهم الآخرين بفرحه بالحياة. لا يمنعه خطر الإصابة بالسرطان المتزايد من الحلم الكبير.',
     source: 'People Magazine',
     icon: '🚀'
   },
   {
     name: 'Pol',
-    age: 'Enfant',
-    story: 'Pol a été diagnostiqué avec XP, causant une extrême sensibilité aux UV. Sa famille et les médecins l\'aident à naviguer dans un monde sans soleil direct. Son histoire est un témoignage de résilience et d\'adaptation, prouvant que même dans l\'obscurité, on peut trouver la lumière.',
+    age: 'طفل',
+    story: 'تم تشخيص بول بمرض XP، مما يسبب حساسية شديدة للأشعة فوق البنفسجية. عائلته والأطباء يساعدونه على التنقل في عالم بدون شمس مباشرة. قصته شهادة على المرونة والتكيف، تثبت أنه حتى في الظلام، يمكن العثور على النور.',
     source: 'Sant Joan de Déu Hospital',
     icon: '💫'
   },
   {
     name: 'Katie',
-    age: 'Enfant',
-    story: 'Katie a XP depuis sa naissance. Ses parents ont créé un monde ombragé pour elle, avec des fenêtres teintées et des protections. Elle vit une vie pleine de joie nocturne, montrant que les défis peuvent être surmontés avec amour et ingéniosité.',
+    age: 'طفلة',
+    story: 'كايتي لديها XP منذ ولادتها. والداها أنشأا عالماً مظلماً لها، بنوافذ ملونة وحماية. تعيش حياة مليئة بفرح الليل، تظهر أن التحديات يمكن التغلب عليها بالحب والبراعة.',
     source: 'NBC News',
     icon: '🌙'
   },
   {
     name: 'Zach Orcutt',
-    age: 'Adulte',
-    story: 'Zach vit avec XP, où le soleil est toxique. Il a transformé sa condition en force, en sensibilisant les autres et en vivant pleinement la nuit. Son parcours inspire l\'espoir que la différence peut mener à une vie extraordinaire.',
+    age: 'بالغ',
+    story: 'يعيش زاك مع XP، حيث الشمس سامة. حول حالته إلى قوة، بتوعية الآخرين والعيش بشكل كامل في الليل. رحلته تلهم الأمل بأن الاختلاف يمكن أن يؤدي إلى حياة استثنائية.',
     source: 'Men\'s Health',
     icon: '✨'
   },
   {
     name: 'Adelinde',
-    age: 'Enfant',
-    story: 'Adelinde a XP, la rendant vulnérable aux moindres expositions UV. Avec des vêtements protecteurs et un mode de vie adapté, elle profite de la vie. Son histoire encourage les familles à chercher des solutions pour une vie épanouie.',
+    age: 'طفلة',
+    story: 'أديليندي لديها XP، مما يجعلها عرضة لأقل تعرض للأشعة فوق البنفسجية. مع ملابس واقية ونمط حياة متكيف، تستمتع بالحياة. قصتها تشجع العائلات على البحث عن حلول لحياة مُرضية.',
     source: 'UV Skinz',
     icon: '🦸‍♀️'
   },
   {
     name: 'Amy',
-    age: 'Adulte',
-    story: 'Amy a été diagnostiquée avec XP et a cherché des vêtements UPF 50+ pour profiter de la plage en sécurité. Son voyage vers l\'acceptation et la liberté nocturne montre que vivre avec XP peut être une aventure pleine de découvertes.',
+    age: 'بالغة',
+    story: 'تم تشخيص إيمي بمرض XP وبحثت عن ملابس UPF 50+ للاستمتاع بالشاطئ بأمان. رحلتها نحو القبول والحرية الليلية تظهر أن العيش مع XP يمكن أن يكون مغامرة مليئة بالاكتشافات.',
     source: 'Waterlust',
     icon: '🌊'
   }
@@ -121,10 +121,10 @@ const Espoir: React.FC = () => {
               💫
             </motion.div>
             <h1 className="text-4xl md:text-5xl font-bold text-blue-200 mb-4 bg-gradient-to-r from-blue-200 via-purple-200 to-indigo-200 bg-clip-text text-transparent drop-shadow-lg">
-              Histoires d'Espoir
+              قصص الأمل
             </h1>
             <p className="text-xl text-blue-300 drop-shadow-sm max-w-2xl mx-auto">
-              Découvrez les histoires inspirantes de personnes réelles vivant avec le Xeroderma Pigmentosum. Leurs parcours montrent que l'espoir brille même dans l'obscurité. 🌟
+              اكتشف القصص الملهمة لأشخاص حقيقيين يعيشون مع جفاف الجلد المصطبغ. رحلاتهم تظهر أن الأمل يضيء حتى في الظلام. 🌟
             </p>
           </div>
 
@@ -154,7 +154,7 @@ const Espoir: React.FC = () => {
                   {story.story}
                 </p>
                 <p className="text-sm text-blue-400 text-right">
-                  Source: {story.source}
+                  المصدر: {story.source}
                 </p>
               </motion.section>
             ))}
@@ -167,9 +167,9 @@ const Espoir: React.FC = () => {
             transition={{ delay: 0.2 * stories.length, duration: 0.6 }}
             className="mt-12 text-center bg-gradient-to-r from-blue-400/10 to-purple-400/10 backdrop-blur-sm border border-blue-400/30 rounded-2xl p-8 shadow-xl shadow-purple-400/10"
           >
-            <h2 className="text-2xl font-bold text-blue-200 mb-4">L'Espoir Brille Toujours</h2>
+            <h2 className="text-2xl font-bold text-blue-200 mb-4">الأمل يضيء دائماً</h2>
             <p className="text-lg text-blue-300 leading-relaxed">
-              Ces histoires nous rappellent que avec du courage, du soutien et de l'innovation, vivre avec XP peut être une aventure pleine de possibilités. À Lunaria, nous célébrons chaque victoire sous la lune. ✨
+              هذه القصص تذكرنا أنه مع الشجاعة والدعم والابتكار، يمكن أن يكون العيش مع XP مغامرة مليئة بالإمكانيات. في لوناريا، نحتفل بكل انتصار تحت القمر. ✨
             </p>
           </motion.div>
         </motion.div>

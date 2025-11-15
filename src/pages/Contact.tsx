@@ -16,7 +16,7 @@ import React, { useState } from 'react';
       const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         // Simulate form submission
-        toast.success('Merci pour votre message ! Nous vous répondrons bientôt. 🌙');
+        toast.success('شكراً لرسالتك! سنرد عليك قريباً. 🌙');
         setFormData({ name: '', email: '', message: '' });
       };
 
@@ -48,10 +48,10 @@ import React, { useState } from 'react';
                   💫
                 </motion.div>
                 <h1 className="text-4xl font-bold text-blue-200 mb-4">
-                  Contactez-nous
+                  اتصل بنا
                 </h1>
                 <p className="text-xl text-blue-300">
-                  Nous sommes là pour vous aider sous les étoiles
+                  نحن هنا لمساعدتك تحت النجوم
                 </p>
               </div>
 
@@ -64,7 +64,7 @@ import React, { useState } from 'react';
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-blue-200 font-medium mb-2">
-                      Nom
+                      الاسم
                     </label>
                     <input
                       type="text"
@@ -74,13 +74,13 @@ import React, { useState } from 'react';
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-slate-700/50 border border-blue-400/30 rounded-lg text-blue-100 placeholder-blue-300/50 focus:outline-none focus:ring-2 focus:ring-blue-400/50 focus:border-transparent transition-all"
-                      placeholder="Votre nom"
+                      placeholder="اسمك"
                     />
                   </div>
 
                   <div>
                     <label htmlFor="email" className="block text-blue-200 font-medium mb-2">
-                      Email
+                      البريد الإلكتروني
                     </label>
                     <input
                       type="email"
@@ -90,13 +90,13 @@ import React, { useState } from 'react';
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-slate-700/50 border border-blue-400/30 rounded-lg text-blue-100 placeholder-blue-300/50 focus:outline-none focus:ring-2 focus:ring-blue-400/50 focus:border-transparent transition-all"
-                      placeholder="votre.email@exemple.com"
+                      placeholder="بريدك@مثال.com"
                     />
                   </div>
 
                   <div>
                     <label htmlFor="message" className="block text-blue-200 font-medium mb-2">
-                      Message
+                      الرسالة
                     </label>
                     <textarea
                       id="message"
@@ -106,7 +106,7 @@ import React, { useState } from 'react';
                       required
                       rows={6}
                       className="w-full px-4 py-3 bg-slate-700/50 border border-blue-400/30 rounded-lg text-blue-100 placeholder-blue-300/50 focus:outline-none focus:ring-2 focus:ring-blue-400/50 focus:border-transparent transition-all resize-none"
-                      placeholder="Votre message..."
+                      placeholder="رسالتك..."
                     />
                   </div>
 
@@ -116,7 +116,7 @@ import React, { useState } from 'react';
                     whileTap={{ scale: 0.98 }}
                     className="w-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-400/30 text-blue-200 font-medium py-3 px-6 rounded-lg hover:from-blue-500/30 hover:to-purple-500/30 hover:border-blue-400/50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400/50"
                   >
-                    Envoyer le message ✨
+                    إرسال الرسالة ✨
                   </motion.button>
                 </form>
               </motion.div>
@@ -128,14 +128,14 @@ import React, { useState } from 'react';
                 className="mt-8 text-center"
               >
                 <p className="text-blue-300 mb-4">
-                  Vous pouvez aussi nous contacter via :
+                  يمكنك أيضاً التواصل معنا عبر:
                 </p>
                 <a
                   href="#"
                   className="inline-flex items-center space-x-2 text-blue-200 hover:text-blue-100 transition-colors"
                 >
                   <span>🌙</span>
-                  <span>Association Tunisienne des Enfants de la Lune</span>
+                  <span>الجمعية التونسية لأطفال القمر</span>
                 </a>
               </motion.div>
             </motion.div>

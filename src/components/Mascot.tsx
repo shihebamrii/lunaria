@@ -2,36 +2,36 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const encouragementPhrases = [
-  "La lune te regarde, tu fais du beau travail 🌕✨",
-  "Bravo ! Tu gagnes ton badge de lumière 💫",
-  "🌟 Tu avances bien dans ton parcours !",
-  "💫 Tu veux une petite pause ? Respire et regarde la lune.",
-  "Sous les étoiles, tout est possible ✨",
-  "Continue comme ça, petit héros de la lune 🌙",
-  "La nuit est ton amie, explore avec joie ! 🌌",
-  "Chaque étoile est une victoire 🌟"
+  "القمر ينظر إليك، أنت تقوم بعمل رائع 🌕✨",
+  "أحسنت! لقد حصلت على شارة النور 💫",
+  "🌟 أنت تتقدم بشكل جيد في رحلتك!",
+  "💫 هل تريد استراحة صغيرة؟ تنفس وانظر إلى القمر.",
+  "تحت النجوم، كل شيء ممكن ✨",
+  "استمر هكذا، أيها البطل الصغير للقمر 🌙",
+  "الليل صديقك، استكشف بفرح! 🌌",
+  "كل نجمة هي انتصار 🌟"
 ];
 
 const jokes = [
-  "Pourquoi la lune est-elle toujours fatiguée ? Parce qu'elle passe ses nuits à briller ! 🌙😴",
-  "Qu'est-ce que la lune dit à l'étoile ? 'Tu es ma star préférée !' 🌟😂",
-  "Pourquoi les astronautes ne font-ils pas de fêtes sur la lune ? Parce qu'il n'y a pas d'atmosphère ! 🚀🎉",
-  "Comment la lune coupe-t-elle ses cheveux ? En eclipse ! ✂️🌒"
+  "لماذا القمر متعب دائماً؟ لأنه يقضي لياليه في الإضاءة! 🌙😴",
+  "ماذا قال القمر للنجمة؟ 'أنت نجمتي المفضلة!' 🌟😂",
+  "لماذا لا يقيم رواد الفضاء حفلات على القمر؟ لأنه لا يوجد جو! 🚀🎉",
+  "كيف يقص القمر شعره؟ بالكسوف! ✂️🌒"
 ];
 
 const facts = [
-  "Savais-tu que la lune s'éloigne de la Terre de 3,8 cm chaque année ? 🌍🌕",
-  "La lune a des tremblements de lune, comme des tremblements de terre ! 🌙⚡",
-  "Il n'y a pas de son sur la lune car il n'y a pas d'air ! 🔇🚀",
-  "La lune influence les marées sur Terre grâce à la gravité ! 🌊🌕"
+  "هل تعلم أن القمر يبتعد عن الأرض بمقدار 3.8 سم كل عام؟ 🌍🌕",
+  "القمر لديه زلازل قمرية، مثل زلازل الأرض! 🌙⚡",
+  "لا يوجد صوت على القمر لأنه لا يوجد هواء! 🔇🚀",
+  "القمر يؤثر على المد والجزر على الأرض بفضل الجاذبية! 🌊🌕"
 ];
 
 const options = [
-  "Encourage-moi !",
-  "Raconte-moi une blague",
-  "Dis-moi un fait sur la lune",
-  "Comment ça va ?",
-  "Au revoir"
+  "شجعني!",
+  "احكِ لي نكتة",
+  "أخبرني بحقيقة عن القمر",
+  "كيف حالك؟",
+  "وداعاً"
 ];
 
 const Mascot: React.FC = () => {
@@ -41,7 +41,7 @@ const Mascot: React.FC = () => {
 
   const handleMascotClick = () => {
     if (!isChatOpen) {
-      setMessages([{ role: 'mascot', text: "Salut ! Je suis Luma, ton guide lunaire. Comment puis-je t'aider aujourd'hui ? 🌙" }]);
+      setMessages([{ role: 'mascot', text: "مرحباً! أنا لومة، دليلك القمري. كيف يمكنني مساعدتك اليوم؟ 🌙" }]);
       setIsChatOpen(true);
       setBounce(true);
       setTimeout(() => setBounce(false), 1500);
@@ -55,20 +55,20 @@ const Mascot: React.FC = () => {
     
     let response = '';
     switch (option) {
-      case 'Encourage-moi !':
+      case 'شجعني!':
         response = encouragementPhrases[Math.floor(Math.random() * encouragementPhrases.length)];
         break;
-      case 'Raconte-moi une blague':
+      case 'احكِ لي نكتة':
         response = jokes[Math.floor(Math.random() * jokes.length)];
         break;
-      case 'Dis-moi un fait sur la lune':
+      case 'أخبرني بحقيقة عن القمر':
         response = facts[Math.floor(Math.random() * facts.length)];
         break;
-      case 'Comment ça va ?':
-        response = "Je vais super bien, merci ! Prêt à explorer les étoiles avec toi. Et toi ? 🌟 (Mais comme je suis un renard virtuel, je suis toujours en forme !)";
+      case 'كيف حالك؟':
+        response = "أنا بخير رائع، شكراً لك! مستعد لاستكشاف النجوم معك. وأنت؟ 🌟 (لكن بما أنني ثعلب افتراضي، أنا دائماً في حالة جيدة!)";
         break;
-      case 'Au revoir':
-        response = "À bientôt, petit explorateur ! N'oublie pas de briller sous la lune. 🌕✨";
+      case 'وداعاً':
+        response = "إلى اللقاء، أيها المستكشف الصغير! لا تنس أن تضيء تحت القمر. 🌕✨";
         setTimeout(() => setIsChatOpen(false), 3000);
         break;
     }
@@ -91,7 +91,7 @@ const Mascot: React.FC = () => {
             <div className="flex justify-between items-center p-3 bg-slate-900/50 border-b border-blue-400/20">
               <div className="flex items-center space-x-2">
                 <span className="text-2xl">🦊</span>
-                <span className="text-blue-200 font-bold">Chat avec Luma</span>
+                <span className="text-blue-200 font-bold">محادثة مع لومة</span>
               </div>
               <button 
                 onClick={() => setIsChatOpen(false)}
@@ -122,7 +122,7 @@ const Mascot: React.FC = () => {
             </div>
             
             {/* Options */}
-            {isChatOpen && messages[messages.length - 1]?.role !== 'user' && messages[messages.length - 1]?.text !== "À bientôt, petit explorateur ! N'oublie pas de briller sous la lune. 🌕✨" && (
+            {isChatOpen && messages[messages.length - 1]?.role !== 'user' && messages[messages.length - 1]?.text !== "إلى اللقاء، أيها المستكشف الصغير! لا تنس أن تضيء تحت القمر. 🌕✨" && (
               <div className="p-3 bg-slate-900/50 border-t border-blue-400/20 flex flex-wrap justify-center gap-2">
                 {options.map((opt, index) => (
                   <motion.button

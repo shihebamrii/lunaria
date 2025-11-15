@@ -10,10 +10,10 @@ const Header: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navItems = [
-    { path: '/', label: 'Accueil', icon: '🌙' },
-    { path: '/about', label: 'À propos', icon: '✨' },
-    { path: '/contact', label: 'Contact', icon: '💫' },
-    { path: '/hope', label: 'Espoir', icon: '💕' }
+    { path: '/', label: 'الرئيسية', icon: '🌙' },
+    { path: '/about', label: 'من نحن', icon: '✨' },
+    { path: '/contact', label: 'اتصل بنا', icon: '💫' },
+    { path: '/hope', label: 'الأمل', icon: '💕' }
   ];
 
   return (
@@ -34,9 +34,9 @@ const Header: React.FC = () => {
             />
             <div>
               <h1 className="text-xl font-bold text-blue-200 group-hover:text-blue-100 transition-colors drop-shadow-sm">
-                Lunaria
+                لوناريا
               </h1>
-              <p className="text-xs text-blue-300/70">L'école de la Lune</p>
+              <p className="text-xs text-blue-300/70">مدرسة القمر</p>
             </div>
           </Link>
 
@@ -65,7 +65,7 @@ const Header: React.FC = () => {
               className="flex items-center space-x-2 px-3 py-2 bg-purple-400/20 text-purple-200 rounded-lg border border-purple-400/30 hover:bg-purple-400/30 hover:border-purple-400/50 transition-all duration-300 shadow-sm shadow-purple-400/10"
             >
               <Cloud className="w-4 h-4" />
-              <span className="text-sm font-medium">Météo</span>
+              <span className="text-sm font-medium">الطقس</span>
             </motion.button>
           </div>
 
@@ -109,7 +109,7 @@ const Header: React.FC = () => {
               className="flex items-center space-x-2 px-3 py-2 bg-purple-400/20 text-purple-200 rounded-lg border border-purple-400/30 hover:bg-purple-400/30 hover:border-purple-400/50 transition-all duration-300 shadow-sm shadow-purple-400/10"
             >
               <Cloud className="w-4 h-4" />
-              <span className="text-sm font-medium">Météo</span>
+              <span className="text-sm font-medium">الطقس</span>
             </motion.button>
           </motion.div>
         )}

@@ -1,55 +1,55 @@
 {
       "primaire": {
-        "title": "École Primaire",
+        "title": "الابتدائي",
         "subjects": {
           "mathematiques": {
-            "title": "Mathématiques",
+            "title": "الرياضيات",
             "icon": "🔢",
             "lessons": [
               {
                 "id": 1,
-                "title": "Les nombres de 0 à 100",
-                "description": "Apprendre à compter et reconnaître les nombres",
+                "title": "الأعداد من 0 إلى 100",
+                "description": "تعلم العد والتعرف على الأعداد",
                 "type": "pdf",
                 "url": "#"
               },
               {
                 "id": 2,
-                "title": "L'addition simple",
-                "description": "Découvrir l'addition avec des exemples amusants",
+                "title": "الجمع البسيط",
+                "description": "اكتشف الجمع مع أمثلة ممتعة",
                 "type": "video",
                 "url": "#"
               }
             ]
           },
           "francais": {
-            "title": "Français",
+            "title": "الفرنسية",
             "icon": "📚",
             "lessons": [
               {
                 "id": 1,
-                "title": "L'alphabet et les voyelles",
-                "description": "Apprendre les lettres de l'alphabet",
+                "title": "الأبجدية والحروف المتحركة",
+                "description": "تعلم حروف الأبجدية",
                 "type": "pdf",
                 "url": "#"
               },
               {
                 "id": 2,
-                "title": "Mes premiers mots",
-                "description": "Vocabulaire de base pour débuter",
+                "title": "كلماتي الأولى",
+                "description": "مفردات أساسية للبدء",
                 "type": "video",
                 "url": "#"
               }
             ]
           },
           "sciences": {
-            "title": "Sciences",
+            "title": "العلوم",
             "icon": "🔬",
             "lessons": [
               {
                 "id": 1,
-                "title": "Les animaux de la nuit",
-                "description": "Découvrir les animaux nocturnes",
+                "title": "حيوانات الليل",
+                "description": "اكتشف الحيوانات الليلية",
                 "type": "pdf",
                 "url": "#"
               }
@@ -58,49 +58,49 @@
         }
       },
       "college": {
-        "title": "Collège",
+        "title": "المتوسط",
         "subjects": {
           "mathematiques": {
-            "title": "Mathématiques",
+            "title": "الرياضيات",
             "icon": "📐",
             "lessons": [
               {
                 "id": 1,
-                "title": "Les fractions",
-                "description": "Comprendre et utiliser les fractions",
+                "title": "الكسور",
+                "description": "فهم واستخدام الكسور",
                 "type": "pdf",
                 "url": "#"
               },
               {
                 "id": 2,
-                "title": "La géométrie de base",
-                "description": "Formes et calculs géométriques",
+                "title": "الهندسة الأساسية",
+                "description": "الأشكال والحسابات الهندسية",
                 "type": "video",
                 "url": "#"
               }
             ]
           },
           "francais": {
-            "title": "Français",
+            "title": "الفرنسية",
             "icon": "✍️",
             "lessons": [
               {
                 "id": 1,
-                "title": "La grammaire française",
-                "description": "Les règles de base de la grammaire",
+                "title": "قواعد اللغة الفرنسية",
+                "description": "القواعد الأساسية للنحو",
                 "type": "pdf",
                 "url": "#"
               }
             ]
           },
           "sciences": {
-            "title": "Sciences",
+            "title": "العلوم",
             "icon": "🧪",
             "lessons": [
               {
                 "id": 1,
-                "title": "La photosynthèse",
-                "description": "Comment les plantes produisent leur énergie",
+                "title": "البناء الضوئي",
+                "description": "كيف تنتج النباتات طاقتها",
                 "type": "video",
                 "url": "#"
               }
@@ -109,42 +109,42 @@
         }
       },
       "lycee": {
-        "title": "Lycée",
+        "title": "الثانوي",
         "subjects": {
           "mathematiques": {
-            "title": "Mathématiques",
+            "title": "الرياضيات",
             "icon": "∑",
             "lessons": [
               {
                 "id": 1,
-                "title": "Les fonctions",
-                "description": "Introduction aux fonctions mathématiques",
+                "title": "الدوال",
+                "description": "مقدمة في الدوال الرياضية",
                 "type": "pdf",
                 "url": "#"
               }
             ]
           },
           "francais": {
-            "title": "Français",
+            "title": "الفرنسية",
             "icon": "📖",
             "lessons": [
               {
                 "id": 1,
-                "title": "La littérature française",
-                "description": "Les grands auteurs et leurs œuvres",
+                "title": "الأدب الفرنسي",
+                "description": "كبار المؤلفين وأعمالهم",
                 "type": "pdf",
                 "url": "#"
               }
             ]
           },
           "sciences": {
-            "title": "Sciences",
+            "title": "العلوم",
             "icon": "⚗️",
             "lessons": [
               {
                 "id": 1,
-                "title": "La chimie organique",
-                "description": "Les bases de la chimie du carbone",
+                "title": "الكيمياء العضوية",
+                "description": "أساسيات كيمياء الكربون",
                 "type": "video",
                 "url": "#"
               }

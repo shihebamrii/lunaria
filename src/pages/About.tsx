@@ -8,21 +8,21 @@ import StarField from '../components/StarField';
 const About: React.FC = () => {
   const teamMembers = [
     {
-      name: 'Dr. Stella Nocturne',
-      role: 'Fondatrice & Directrice',
-      description: 'Experte en éducation inclusive avec 20 ans d\'expérience en pédagogie nocturne.',
+      name: 'د. ستيلا نوكتورن',
+      role: 'المؤسسة والمديرة',
+      description: 'خبيرة في التعليم الشامل مع 20 عاماً من الخبرة في التربية الليلية.',
       icon: '👩‍🔬'
     },
     {
-      name: 'Prof. Orion Lune',
-      role: 'Chef Pédagogique',
-      description: 'Spécialiste en sciences stellaires et apprentissage interactif pour enfants sensibles.',
+      name: 'بروف. أوريون لون',
+      role: 'رئيس التعليم',
+      description: 'متخصص في العلوم النجمية والتعلم التفاعلي للأطفال الحساسين.',
       icon: '👨‍🏫'
     },
     {
-      name: 'Luna Spark',
-      role: 'Conceptrice de Contenu',
-      description: 'Créatrice de jeux éducatifs magiques inspirés par la lune et les étoiles.',
+      name: 'لونا سبارك',
+      role: 'مصممة المحتوى',
+      description: 'مبدعة ألعاب تعليمية سحرية مستوحاة من القمر والنجوم.',
       icon: '🎨'
     }
   ];
@@ -30,40 +30,40 @@ const About: React.FC = () => {
   const approaches = [
     {
       icon: '🚀',
-      title: 'Apprentissage Adaptatif',
-      description: 'Cours personnalisés qui s\'adaptent au rythme et aux besoins de chaque enfant.'
+      title: 'تعلم متكيف',
+      description: 'دروس مخصصة تتكيف مع إيقاع واحتياجات كل طفل.'
     },
     {
       icon: '🌌',
-      title: 'Thèmes Cosmiques',
-      description: 'Leçons inspirées de l\'univers pour stimuler l\'imagination et la curiosité.'
+      title: 'مواضيع كونية',
+      description: 'دروس مستوحاة من الكون لتحفيز الخيال والفضول.'
     },
     {
       icon: '🤝',
-      title: 'Communauté Soutenante',
-      description: 'Interactions sécurisées avec d\'autres enfants et mentors pour un soutien mutuel.'
+      title: 'مجتمع داعم',
+      description: 'تفاعلات آمنة مع أطفال ومرشدين آخرين للدعم المتبادل.'
     },
     {
       icon: '📱',
-      title: 'Technologie Accessible',
-      description: 'Plateforme intuitive avec mode sombre et outils d\'accessibilité avancés.'
+      title: 'تقنية متاحة',
+      description: 'منصة بديهية مع وضع داكن وأدوات إمكانية وصول متقدمة.'
     }
   ];
 
   const testimonials = [
     {
-      quote: 'Lunaria a transformé les nuits de mon enfant en moments magiques d\'apprentissage !',
-      author: 'Parent d\'un élève primaire',
+      quote: 'لوناريا حولت ليالي طفلي إلى لحظات سحرية من التعلم!',
+      author: 'والد طالب ابتدائي',
       icon: '⭐'
     },
     {
-      quote: 'Enfin une école qui comprend nos besoins et célèbre notre différence.',
-      author: 'Élève du collège',
+      quote: 'أخيراً مدرسة تفهم احتياجاتنا وتحتفل باختلافنا.',
+      author: 'طالب متوسط',
       icon: '🌟'
     },
     {
-      quote: 'Luma est comme un ami qui nous guide vers les étoiles du savoir.',
-      author: 'Parent d\'un lycéen',
+      quote: 'لومة مثل صديق يرشدنا نحو نجوم المعرفة.',
+      author: 'والد طالب ثانوي',
       icon: '✨'
     }
   ];
@@ -131,10 +131,10 @@ const About: React.FC = () => {
               🌕
             </motion.div>
             <h1 className="text-4xl md:text-5xl font-bold text-blue-200 mb-4 bg-gradient-to-r from-blue-200 via-purple-200 to-indigo-200 bg-clip-text text-transparent drop-shadow-lg">
-              À propos de Lunaria
+              عن لوناريا
             </h1>
             <p className="text-xl text-blue-300 drop-shadow-sm">
-              L'école de la Lune pour les enfants extraordinaires. Un havre nocturne d'apprentissage et de rêves.
+              مدرسة القمر للأطفال الاستثنائيين. ملاذ ليلي للتعلم والأحلام.
             </p>
           </div>
 
@@ -154,17 +154,17 @@ const About: React.FC = () => {
                 >
                   ✨
                 </motion.span>
-                Notre Mission
+                مهمتنا
               </h2>
               <p className="text-lg text-blue-200 leading-relaxed mb-4">
-                Les enfants de la lune sont des héros qui apprennent sans soleil. 
-                Lunaria leur offre une école protégée, pleine de rêve et de savoir. 
-                Nous créons un environnement d'apprentissage sûr et magique où chaque enfant 
-                peut explorer, découvrir et grandir à son propre rythme.
+                أطفال القمر هم أبطال يتعلمون بدون شمس. 
+                لوناريا تقدم لهم مدرسة محمية، مليئة بالحلم والمعرفة. 
+                نخلق بيئة تعليمية آمنة وسحرية حيث يمكن لكل طفل 
+                أن يستكشف ويكتشف وينمو بوتيرته الخاصة.
               </p>
               <p className="text-lg text-blue-200 leading-relaxed">
-                Notre objectif est d\'offrir une éducation de qualité, accessible 24/7, 
-                adaptée aux horaires nocturnes, avec un focus sur le bien-être émotionnel et physique.
+                هدفنا هو تقديم تعليم عالي الجودة، متاح على مدار الساعة، 
+                متكيف مع الجداول الليلية، مع التركيز على الرفاهية العاطفية والجسدية.
               </p>
             </motion.section>
 
@@ -183,22 +183,22 @@ const About: React.FC = () => {
                 >
                   🌙
                 </motion.span>
-                Les Enfants de la Lune
+                أطفال القمر
               </h2>
               <p className="text-lg text-blue-200 leading-relaxed mb-4">
-                Certains enfants extraordinaires ont une condition appelée Xeroderma Pigmentosum (XP). 
-                Cela signifie que leur peau est très sensible aux rayons du soleil, alors ils vivent 
-                principalement la nuit, évitant toute exposition à la lumière UV.
+                بعض الأطفال الاستثنائيين لديهم حالة تسمى جفاف الجلد المصطبغ (XP). 
+                هذا يعني أن بشرتهم حساسة جداً لأشعة الشمس، لذلك يعيشون 
+                بشكل رئيسي في الليل، متجنبين أي تعرض لضوء الأشعة فوق البنفسجية.
               </p>
               <p className="text-lg text-blue-200 leading-relaxed mb-4">
-                Ces enfants courageux transforment la nuit en leur terrain de jeu et d'apprentissage. 
-                Ils nous montrent que la différence peut être une force et que l'on peut briller 
-                même dans l'obscurité. 🌟
+                هؤلاء الأطفال الشجعان يحولون الليل إلى ملعبهم ومكان تعلمهم. 
+                يظهرون لنا أن الاختلاف يمكن أن يكون قوة وأنه يمكن الإضاءة 
+                حتى في الظلام. 🌟
               </p>
               <ul className="list-disc list-inside text-blue-300 space-y-2">
-                <li>Plus de 1 000 enfants dans le monde sont touchés par XP.</li>
-                <li>Notre programme aide à maintenir un rythme scolaire normal malgré les contraintes.</li>
-                <li>Focus sur la santé mentale et l\'inclusion sociale.</li>
+                <li>أكثر من 1000 طفل في العالم متأثرون بمرض XP.</li>
+                <li>برنامجنا يساعد في الحفاظ على إيقاع مدرسي طبيعي رغم القيود.</li>
+                <li>التركيز على الصحة العقلية والاندماج الاجتماعي.</li>
               </ul>
             </motion.section>
 
@@ -211,10 +211,10 @@ const About: React.FC = () => {
             >
               <h2 className="text-2xl font-bold text-blue-200 mb-6 flex items-center justify-center">
                 <span className="mr-3 text-3xl">🪐</span>
-                Notre Approche Pédagogique
+                نهجنا التعليمي
               </h2>
               <p className="text-lg text-blue-200 leading-relaxed mb-6 text-center">
-                À Lunaria, nous combinons innovation technologique et pédagogie bienveillante pour un apprentissage optimal.
+                في لوناريا، نجمع بين الابتكار التكنولوجي والتربية الرحيمة للتعلم الأمثل.
               </p>
               <div className="grid md:grid-cols-2 gap-6">
                 {approaches.map((approach, index) => (
@@ -248,15 +248,15 @@ const About: React.FC = () => {
                 >
                   💫
                 </motion.span>
-                Message d'Espoir
+                رسالة الأمل
               </h2>
               <p className="text-xl text-blue-200 leading-relaxed font-medium mb-4">
-                "Sous la lune, chacun peut briller à sa manière."
+                "تحت القمر، يمكن لكل واحد أن يضيء بطريقته."
               </p>
               <p className="text-lg text-blue-300 leading-relaxed">
-                Chaque enfant a un potentiel unique et précieux. 
-                À Lunaria, nous célébrons cette diversité et offrons à chacun 
-                les outils pour réaliser ses rêves, peu importe les défis. Rejoignez-nous pour illuminer l'avenir !
+                كل طفل لديه إمكانات فريدة وثمينة. 
+                في لوناريا، نحتفل بهذا التنوع ونقدم لكل واحد 
+                الأدوات لتحقيق أحلامه، بغض النظر عن التحديات. انضم إلينا لإضاءة المستقبل!
               </p>
             </motion.section>
 
@@ -269,7 +269,7 @@ const About: React.FC = () => {
             >
               <h2 className="text-2xl font-bold text-blue-200 mb-6 flex items-center justify-center">
                 <span className="mr-3 text-3xl">👥</span>
-                Notre Équipe Dédiée
+                فريقنا المتفاني
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
                 {teamMembers.map((member, index) => (
@@ -305,16 +305,16 @@ const About: React.FC = () => {
                   <img src="/luma.png" alt="Mascot Luma" className="w-10 h-10 object-contain" />
                 </motion.div>
                 <h2 className="text-2xl font-bold text-blue-200">
-                  Rencontre Luma
+                  تعرف على لومة
                 </h2>
               </div>
               <p className="text-lg text-blue-200 leading-relaxed text-center mb-4">
-                Luma est notre guide bienveillant, un petit renard lunaire qui accompagne 
-                chaque enfant dans son voyage d'apprentissage. Toujours encourageant et plein 
-                de sagesse, Luma est là pour motiver, rassurer et célébrer chaque progrès. ✨
+                لومة هو دليلنا الرحيم، ثعلب قمري صغير يرافق 
+                كل طفل في رحلته التعليمية. دائماً مشجع ومليء 
+                بالحكمة، لومة موجود لتحفيز وطمأنة والاحتفال بكل تقدم. ✨
               </p>
               <p className="text-lg text-blue-200 leading-relaxed text-center">
-                Avec Luma, chaque leçon devient une aventure excitante vers les étoiles du savoir !
+                مع لومة، كل درس يصبح مغامرة مثيرة نحو نجوم المعرفة!
               </p>
             </motion.section>
 
@@ -327,7 +327,7 @@ const About: React.FC = () => {
             >
               <h2 className="text-2xl font-bold text-blue-200 mb-6 flex items-center justify-center">
                 <span className="mr-3 text-3xl">💬</span>
-                Témoignages
+                شهادات
               </h2>
               <div className="space-y-6">
                 {testimonials.map((testimonial, index) => (
@@ -364,7 +364,7 @@ const About: React.FC = () => {
               className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full text-white font-bold text-lg shadow-lg"
               onClick={() => window.location.href = '/'} // Link back to home or registration
             >
-              Rejoindre Lunaria 🌟
+              انضم إلى لوناريا 🌟
             </motion.button>
           </motion.div>
         </motion.div>

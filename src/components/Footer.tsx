@@ -7,24 +7,24 @@ import React from 'react';
             <div className="text-center space-y-4">
               <div className="flex justify-center space-x-8 text-sm">
                 <a href="/about" className="text-blue-300 hover:text-blue-200 transition-colors">
-                  À propos
+                  من نحن
                 </a>
                 <a href="/contact" className="text-blue-300 hover:text-blue-200 transition-colors">
-                  Contact
+                  اتصل بنا
                 </a>
                 <a href="/hope" className="text-blue-300 hover:text-blue-200 transition-colors">
-                  Espoir
+                  الأمل
                 </a>
               </div>
               
               <div className="text-blue-300/70 text-sm">
-                <p className="mb-2">Sous la lune, chaque enfant peut apprendre à briller 🌕</p>
-                <p>© 2025 Lunaria - L'école de la Lune</p>
+                <p className="mb-2">تحت ضوء القمر، يمكن لكل طفل أن يتعلم كيف يضيء 🌕</p>
+                <p>© 2025 لوناريا - مدرسة القمر</p>
               </div>
 
               <div className="pt-4 border-t border-blue-400/10">
                 <p className="text-xs text-blue-300/50">
-                  Built with ❤️ by <a rel="nofollow" target="_blank" href="https://instagram.com/shihebamri" className="text-blue-300 hover:text-blue-200">shihebamri</a>
+                  صُنع بـ ❤️ بواسطة <a rel="nofollow" target="_blank" href="https://instagram.com/shihebamri" className="text-blue-300 hover:text-blue-200">shihebamri</a>
                 </p>
               </div>
             </div>

@@ -10,48 +10,48 @@ const Home: React.FC = () => {
   const levels = [
     {
       level: 'primaire',
-      title: 'Primaire',
-      description: 'Pour les petits explorateurs de 6 à 11 ans qui découvrent le monde sous les étoiles. Apprends les bases des sciences, des maths et des langues avec des jeux lunaires !',
+      title: 'الابتدائي',
+      description: 'للمستكشفين الصغار من 6 إلى 11 عاماً الذين يكتشفون العالم تحت النجوم. تعلم أساسيات العلوم والرياضيات واللغات مع ألعاب قمرية!',
       icon: '🌙',
       path: '/learn/primaire',
       color: 'from-blue-600 to-indigo-700',
-      features: ['Jeux interactifs', 'Histoires stellaires', 'Quiz quotidiens']
+      features: ['ألعاب تفاعلية', 'قصص نجمية', 'اختبارات يومية']
     },
     {
       level: 'college',
-      title: 'Collège',
-      description: 'Pour les jeunes aventuriers de 12 à 15 ans qui approfondissent leurs connaissances. Explore la physique des étoiles, l\'histoire des constellations et plus encore !',
+      title: 'المتوسط',
+      description: 'للمغامرين الشباب من 12 إلى 15 عاماً الذين يعمقون معرفتهم. استكشف فيزياء النجوم وتاريخ الأبراج والمزيد!',
       icon: '🌓',
       path: '/learn/college',
       color: 'from-purple-600 to-blue-700',
-      features: ['Projets créatifs', 'Expériences virtuelles', 'Défis collaboratifs']
+      features: ['مشاريع إبداعية', 'تجارب افتراضية', 'تحديات تعاونية']
     },
     {
       level: 'lycee',
-      title: 'Lycée',
-      description: 'Pour les étudiants de 16 à 18 ans qui se préparent à briller de mille feux. Plonge dans des sujets avancés comme l\'astrophysique et la philosophie cosmique.',
+      title: 'الثانوي',
+      description: 'للطلاب من 16 إلى 18 عاماً الذين يستعدون للإضاءة بآلاف الأضواء. انغمس في مواضيع متقدمة مثل الفيزياء الفلكية والفلسفة الكونية.',
       icon: '🌕',
       path: '/learn/lycee',
       color: 'from-indigo-600 to-purple-700',
-      features: ['Cours approfondis', 'Simulations avancées', 'Préparation aux examens']
+      features: ['دروس متعمقة', 'محاكاة متقدمة', 'التحضير للامتحانات']
     }
   ];
 
   const features = [
     {
       icon: '✨',
-      title: 'Apprentissage Ludique',
-      description: 'Des leçons transformées en aventures spatiales pour rendre l\'éducation excitante.'
+      title: 'تعلم ممتع',
+      description: 'دروس تتحول إلى مغامرات فضائية لجعل التعليم مثيراً.'
     },
     {
       icon: '🌟',
-      title: 'Progrès Personnalisé',
-      description: 'Suivi individuel avec des badges stellaires et des niveaux à débloquer.'
+      title: 'تقدم شخصي',
+      description: 'متابعة فردية مع شارات نجمية ومستويات للفتح.'
     },
     {
       icon: '🚀',
-      title: 'Communauté Lunaire',
-      description: 'Rejoins d\'autres explorateurs pour des discussions et des défis collectifs.'
+      title: 'مجتمع قمري',
+      description: 'انضم إلى مستكشفين آخرين للمناقشات والتحديات الجماعية.'
     }
   ];
 
@@ -134,10 +134,10 @@ const Home: React.FC = () => {
 
             <div className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-200 via-purple-200 to-indigo-200 bg-clip-text text-transparent drop-shadow-lg">
-                Bienvenue à Lunaria
+                مرحباً بك في لوناريا
               </h1>
               <p className="text-xl md:text-2xl text-blue-200 mb-8 leading-relaxed drop-shadow-sm">
-                L'école de la Lune où chaque enfant peut apprendre à briller comme les étoiles. Rejoins-nous pour une aventure éducative nocturne !
+                مدرسة القمر حيث يمكن لكل طفل أن يتعلم كيف يضيء مثل النجوم. انضم إلينا لمغامرة تعليمية ليلية!
               </p>
             </div>
 
@@ -161,7 +161,7 @@ const Home: React.FC = () => {
   </motion.div>
   <div className="text-center md:text-left">
     <p className="text-blue-200 text-base md:text-lg leading-relaxed">
-      Salut, petit explorateur ! Je suis Luma, ta guide lunaire. 🌕✨ Ensemble, nous allons découvrir des mondes incroyables et apprendre plein de choses passionnantes. Prêt pour l'aventure ?
+      مرحباً، أيها المستكشف الصغير! أنا لومة، دليلك القمري. 🌕✨ معاً، سنكتشف عوالم مذهلة ونتعلم الكثير من الأشياء المثيرة. هل أنت مستعد للمغامرة؟
     </p>
   </div>
 </div>
@@ -174,7 +174,7 @@ const Home: React.FC = () => {
               className="mt-8 px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full text-white font-bold text-lg shadow-lg"
               onClick={handleScrollToLevels}
             >
-              Commencer l'Aventure 🚀
+              ابدأ المغامرة 🚀
             </motion.button>
           </motion.div>
         </section>
@@ -187,7 +187,7 @@ const Home: React.FC = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-4xl font-bold text-blue-200 mb-12 text-center drop-shadow-lg"
           >
-            Choisis Ton Niveau Stellaire
+            اختر مستواك النجمي
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -230,7 +230,7 @@ const Home: React.FC = () => {
             transition={{ delay: 1.2, duration: 0.8 }}
             className="text-4xl font-bold text-blue-200 mb-12 text-center drop-shadow-lg"
           >
-            Pourquoi Choisir Lunaria ?
+            لماذا تختار لوناريا؟
           </motion.h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {features.map((feature, index) => (
@@ -257,17 +257,17 @@ const Home: React.FC = () => {
             transition={{ delay: 1.5, duration: 0.8 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl font-bold text-blue-200 mb-6 drop-shadow-lg">À propos de Lunaria</h2>
+            <h2 className="text-3xl font-bold text-blue-200 mb-6 drop-shadow-lg">عن لوناريا</h2>
             <div className="bg-gradient-to-r from-slate-800/40 to-slate-700/40 backdrop-blur-md border border-blue-400/20 rounded-2xl p-8 shadow-xl shadow-blue-400/10">
               <p className="text-lg text-blue-200 leading-relaxed mb-4">
-                Lunaria est une école virtuelle créée pour les enfants de la lune. 
-                Inspirée par la magie de la nuit, nous transformons l'apprentissage en une quête cosmique où chaque leçon est une étoile à conquérir.
+                لوناريا هي مدرسة افتراضية أُنشئت لأطفال القمر. 
+                مستوحاة من سحر الليل، نحول التعلم إلى رحلة كونية حيث كل درس هو نجمة يجب غزوها.
               </p>
               <p className="text-lg text-blue-200 leading-relaxed mb-4">
-                Ici, la nuit est un moment de découverte, de rêve et d'innovation. ✨ Avec des outils interactifs et une communauté bienveillante, nous aidons chaque enfant à atteindre son potentiel stellaire.
+                هنا، الليل هو لحظة الاكتشاف والحلم والابتكار. ✨ مع أدوات تفاعلية ومجتمع داعم، نساعد كل طفل على الوصول إلى إمكاناته النجمية.
               </p>
               <p className="text-lg text-blue-200 leading-relaxed">
-                Rejoins-nous et illumine ton avenir !
+                انضم إلينا وأضئ مستقبلك!
               </p>
             </div>
           </motion.div>

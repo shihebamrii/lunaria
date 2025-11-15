@@ -11,7 +11,7 @@ import React from 'react';
       const { level } = useParams<{ level: string }>();
       
       if (!level || !coursesData[level as keyof typeof coursesData]) {
-        return <div>Niveau non trouvé</div>;
+        return <div>المستوى غير موجود</div>;
       }
 
       const levelData = coursesData[level as keyof typeof coursesData];
@@ -29,7 +29,7 @@ import React from 'react';
                 className="inline-flex items-center space-x-2 text-blue-300 hover:text-blue-200 transition-colors mb-6"
               >
                 <span>🌕</span>
-                <span>Retour à la lune</span>
+                <span>العودة إلى القمر</span>
               </Link>
               
               <motion.div
@@ -41,7 +41,7 @@ import React from 'react';
                   {levelData.title}
                 </h1>
                 <p className="text-blue-300 text-lg">
-                  Choisis une matière pour commencer ton voyage d'apprentissage ✨
+                  اختر مادة لتبدأ رحلتك التعليمية ✨
                 </p>
               </motion.div>
             </div>
@@ -66,11 +66,11 @@ import React from 'react';
                         {subject.title}
                       </h3>
                       <p className="text-blue-300/70 text-sm">
-                        {subject.lessons.length} leçon{subject.lessons.length > 1 ? 's' : ''} disponible{subject.lessons.length > 1 ? 's' : ''}
+                        {subject.lessons.length} {subject.lessons.length === 1 ? 'درس متاح' : subject.lessons.length === 2 ? 'درسان متاحان' : 'دروس متاحة'}
                       </p>
                       <div className="pt-2">
                         <span className="inline-flex items-center px-4 py-2 bg-blue-400/20 text-blue-200 rounded-full text-sm font-medium group-hover:bg-blue-400/30 transition-colors">
-                          Explorer 🌙
+                          استكشف 🌙
                         </span>
                       </div>
                     </div>
