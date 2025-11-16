@@ -1,13 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { toast } from 'react-toastify';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Mascot from '../../components/Mascot';
 import StarField from '../../components/StarField';
 
+const TEACHER_PASSWORD = import.meta.env.VITE_TECH_PASS || 'lunariateacher2025';
+
 const ClassroomIndex: React.FC = () => {
   const navigate = useNavigate();
+  const [showPasswordModal, setShowPasswordModal] = useState(false);
+  const [password, setPassword] = useState('');
+  const [passwordError, setPasswordError] = useState(false);
+
+  const handlePasswordSubmit = () => {
+    if (password === TEACHER_PASSWORD) {
+      setShowPasswordModal(false);
+      setPassword('');
+      setPasswordError(false);
+      toast.success('تم التحقق بنجاح!', {
+        position: 'top-right',
+        autoClose: 2000,
+      });
+      navigate('/classroom/host');
+    } else {
+      setPasswordError(true);
+      toast.error('كلمة المرور غير صحيحة', {
+        position: 'top-right',
+        autoClose: 3000,
+      });
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 text-blue-100 relative overflow-hidden">
@@ -76,7 +101,7 @@ const ClassroomIndex: React.FC = () => {
                 transition={{ delay: 0.6, duration: 0.6 }}
                 whileHover={{ scale: 1.03, boxShadow: "0 0 20px rgba(234, 179, 8, 0.4)" }}
                 whileTap={{ scale: 0.98 }}
-                onClick={() => navigate('/classroom/host')}
+                onClick={() => setShowPasswordModal(true)}
                 className="flex-1 px-8 py-6 bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border-2 border-yellow-400/40 rounded-2xl text-blue-200 font-bold text-lg md:text-xl shadow-lg shadow-yellow-400/20 hover:from-yellow-500/30 hover:to-amber-500/30 hover:border-yellow-400/60 transition-all duration-300 relative overflow-hidden group"
               >
                 <div className="relative z-10 flex flex-col items-center space-y-2">
@@ -116,6 +141,98 @@ const ClassroomIndex: React.FC = () => {
           </div>
         </motion.div>
       </main>
+
+      {/* Password Modal */}
+      <AnimatePresence>
+        {showPasswordModal && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            onClick={() => {
+              setShowPasswordModal(false);
+              setPassword('');
+              setPasswordError(false);
+            }}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-gradient-to-r from-slate-800/95 to-slate-700/95 backdrop-blur-md border border-yellow-400/40 rounded-2xl p-8 max-w-md w-full shadow-2xl shadow-yellow-400/20"
+            >
+              <div className="text-center mb-6">
+                <span className="text-5xl mb-4 block">🔐</span>
+                <h2 className="text-2xl font-bold text-yellow-200 mb-2">
+                  كلمة مرور المعلم
+                </h2>
+                <p className="text-blue-200 text-sm">
+                  يرجى إدخال كلمة المرور للوصول إلى وضع المعلم
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <div>
+                  <input
+                    type="password"
+                    value={password}
+                    onChange={(e) => {
+                      setPassword(e.target.value);
+                      setPasswordError(false);
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') {
+                        handlePasswordSubmit();
+                      }
+                    }}
+                    placeholder="أدخل كلمة المرور"
+                    className={`w-full px-4 py-3 bg-slate-900/50 border-2 rounded-xl text-blue-100 placeholder-blue-300/50 focus:outline-none focus:ring-2 focus:ring-yellow-400/50 transition-all ${
+                      passwordError
+                        ? 'border-red-500/50 focus:border-red-500'
+                        : 'border-yellow-400/30 focus:border-yellow-400/60'
+                    }`}
+                    autoFocus
+                  />
+                  {passwordError && (
+                    <motion.p
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="text-red-400 text-sm mt-2 text-right"
+                    >
+                      كلمة المرور غير صحيحة
+                    </motion.p>
+                  )}
+                </div>
+
+                <div className="flex gap-3">
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    onClick={() => {
+                      setShowPasswordModal(false);
+                      setPassword('');
+                      setPasswordError(false);
+                    }}
+                    className="flex-1 px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-xl text-blue-200 font-semibold hover:bg-slate-700/70 transition-colors"
+                  >
+                    إلغاء
+                  </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    onClick={handlePasswordSubmit}
+                    className="flex-1 px-4 py-3 bg-gradient-to-r from-yellow-500/30 to-amber-500/30 border-2 border-yellow-400/40 rounded-xl text-yellow-200 font-bold hover:from-yellow-500/40 hover:to-amber-500/40 hover:border-yellow-400/60 transition-all shadow-lg shadow-yellow-400/20"
+                  >
+                    دخول
+                  </motion.button>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <Footer />
       <Mascot />
